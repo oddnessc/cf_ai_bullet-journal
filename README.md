@@ -11,7 +11,7 @@ This project was developed using AI-assisted coding, but all AI prompts used are
 ## Features
 
 - Per-user journals using **Durable Objects**  
-- AI analysis of journal entries (anxiety score 0–10 + summary)  
+- AI analysis of journal entries (anxiety score 0-10 + summary)  
 - Simple **graph visualization** of anxiety over time 
 
 
@@ -19,9 +19,9 @@ This project was developed using AI-assisted coding, but all AI prompts used are
 
 ## Steps Taken During Project
 
-1. Started with a **basic Durable Object** storing entries at `/add`, `/entries`, `/graph`  
-2. Added **frontend** to display entries and draw anxiety graph using `<canvas>`  
-3. Integrated **AI analysis** using a model to summarize and score entries  
+1. Started with a **basic Durable Object** storing entries at `/add`, `/entries`, `/graph` (index.ts)
+2. Added **frontend** to display entries and draw anxiety graph using `<canvas>`  (/public)
+3. Integrated **AI analysis** using a model to summarize and score entries  (index.ts)
 4. Initially handled AI JSON parsing manually  
 5. **Later discovered function calling** via Cloudflare Workers AI  
    - Allowed returning structured `{ anxiety, summary }` directly without manual parsing  
@@ -44,4 +44,5 @@ Youtube introduction to Workers + Cloudflare materials
 Durable Objects: https://developers.cloudflare.com/durable-objects/get-started/
 
 Function calling AI: https://developers.cloudflare.com/workers-ai/features/function-calling/
+
 
