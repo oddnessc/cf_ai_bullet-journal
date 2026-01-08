@@ -1,0 +1,18 @@
+name = "bullet-journal"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "JOURNAL"
+class_name = "Journal"
+
+[[assets]]
+name = "ASSETS"
+directory = "public"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Journal"]

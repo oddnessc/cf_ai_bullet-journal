@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bullet Journal</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+    button {
+      margin-top: 0.5rem;
+    }
+    .entry {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📝 Bullet Journal</h1>
+
+  <textarea id="text" placeholder="Write your journal entry..."></textarea>
+  <button id="submit">Add Entry</button>
+
+  <h2>Entries</h2>
+  <div id="entries"></div>
+
+  <h2>Anxiety Over Time</h2>
+  <canvas id="graph" width="600" height="200"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
